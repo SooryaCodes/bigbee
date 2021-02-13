@@ -15,8 +15,51 @@ body {
   background: var(--darkColor);
 }
 
-/* Main Section */
+/* Main Section 
+=====================================*/
+.section-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
+.stripes-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.stripes-wrapper .lines{
+    height: 100%;
+    opacity: .3;
+    z-index: -1000 !important;
+    
+}
+.stripes-wrapper .lines.first{
+    height: 70%;
+    border-left: 1px solid var(--stripeColor);
+    width: 40%;
+
+}
+.stripes-wrapper .lines.second{
+    width: 15%;
+    border-left: 1px solid var(--stripeColor);
+    border-right: 1px solid var(--stripeColor);
+
+}
+
+.stripes-wrapper .lines.third{
+    width: 40%;
+    border-right: 1px solid var(--stripeColor);
+    /* border-left: 1px solid var(--stripeColor); */
+    height: 80%;
+
+}
 /* Home 
 =====================================*/
 .home-wrapper {
@@ -29,6 +72,7 @@ body {
 
 /* Home Left Section */
 .home-wrapper .home-left-section {
+    padding-left: 30px;
   position: relative;
   width: 50%;
   min-height: 100vh !important;
@@ -41,17 +85,18 @@ body {
 .home-wrapper .home-left-section .logo {
   position: absolute;
   top: 100px;
-  left: -100px;
+  left: -40px;
 }
 
 .home-wrapper .home-left-section .logo img {
   width: 90px;
   height: 90px;
+
 }
 .home-wrapper .home-left-section .left-section-content {
   color: var(--lightColor);
   display: flex;
-  margin-top: 150px;
+  margin-top: 200px;
 
   align-items: flex-start;
   justify-content: center;
@@ -87,6 +132,7 @@ body {
   width: 50px;
   height: 1.5px;
   bottom: 1px;
+  transition: 0.4s ease-in-out;
   right: -20px;
   background: var(--themeColor);
 }
@@ -100,6 +146,11 @@ body {
   color: var(--lightColor);
   border: 2px solid var(--lightColor);
 }
+
+.home-btn:hover #btn-hr {
+  right: -35px;
+}
+
 /* Home Right Section */
 .home-wrapper .home-right-section {
   width: 50%;
@@ -111,20 +162,21 @@ body {
 }
 
 .home-wrapper .home-right-section .rotate-text {
+  margin-top: 250px;
   font-family: "bison-outline";
+  margin-left: 100px;
   color: var(--lightColor);
   font-size: 150px;
   position: relative;
+  z-index: 10000;
   transform: rotate(-90deg);
 }
 
 #bigbee::after {
   content: "MEDIA";
   position: absolute;
-  top: 120px;
+  top: 130px;
+  z-index: 10000;
   left: 120px;
 }
 
-#media {
-  position: absolute;
-}
