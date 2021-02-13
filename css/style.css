@@ -28,18 +28,18 @@ body {
 =====================================*/
 .section-wrapper {
   position: relative;
-  width: 75%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   min-height: 300vh;
-  justify-content: center;
   height: 100%;
+  align-items: center;
 }
 
 .stripes-wrapper {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 75%;
   height: 100% !important;
   z-index: 0;
   display: flex;
@@ -52,7 +52,7 @@ body {
   z-index: -1000 !important;
 }
 .stripes-wrapper .lines.first {
-  height: 70%;
+  height: 90% !important;
   border-left: 1px solid var(--stripeColor);
   width: 40%;
 }
@@ -69,21 +69,22 @@ body {
   height: 80%;
 }
 /* Home 
-=====================================*/
+=====================================================================*/
 .home-wrapper {
-  width: 100%;
+  width: 75%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Home Left Section */
+/* Home Left Section 
+==========================================*/
 .home-wrapper .home-left-section {
   padding-left: 30px;
   position: relative;
   width: 50%;
-  min-height: 100vh ;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +160,8 @@ body {
   right: -35px;
 }
 
-/* Home Right Section */
+/* Home Right Section
+=================================================== */
 .home-wrapper .home-right-section {
   width: 50%;
   min-height: 100vh;
@@ -210,6 +212,148 @@ body {
 
 #bigbee::after {
   content: "MEDIA";
+  position: absolute;
+  top: 160px;
+  z-index: 10000;
+  left: 200px;
+}
+
+/* Service Section 
+========================================================*/
+
+.service-wrapper {
+  width: 75%;
+  display: none;
+  position: relative;
+  display: flex;
+  min-height: 1000px;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Service Left Section
+=================================== */
+
+.service-wrapper .service-left-section {
+  width: 50%;
+  color: var(--darkColor);
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.service{
+  margin-bottom: 20px;
+}
+
+.service-wrapper .service-left-section h4 {
+  font-family: "bison-bold";
+  font-size: 24px;
+}
+
+.service-wrapper .service-left-section p {
+  font-family: "raleway";
+  font-weight: 500;
+  font-size: 14px;
+  width: 50%;
+}
+
+.service-wrapper .service-right-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.service-wrapper .service-left-section .service-btn {
+  position: relative;
+  margin-top: 50px;
+  /* margin-bottom: 100px; */
+}
+.service-wrapper .service-left-section .service-btn hr {
+  position: absolute;
+  width: 50px;
+  height: 1.5px;
+  bottom: 5px;
+  transition: 0.4s ease-in-out;
+  right: -20px;
+  background: var(--darkColor) !important;
+}
+.service-wrapper .service-left-section .service-btn button {
+  width: 180px;
+  height: 45px;
+  background: none;
+  font-family: "bison";
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: var(--darkColor);
+  border: 2px solid var(--darkColor);
+}
+
+.service-btn:hover #btn-hr2 {
+  right: -35px;
+}
+
+
+
+
+/* Service Right Section
+=================================================== */
+.service-wrapper .service-right-section {
+  width: 50%;
+  min-height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.service-wrapper .service-right-section .service-image {
+  position: absolute;
+  z-index: 100000000000000000;
+  right: 450px;
+  width: 300px;
+  top: 100px;
+  height: 600px;
+}
+.service-wrapper .service-right-section .service-image img {
+  width: 250px;
+}
+
+.service-wrapper .service-right-section .service-image p {
+  font-size: 14px;
+  letter-spacing: 5px;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 250px;
+  left: -100px;
+  color: var(--darkColor);
+  font-family: "bison-medium";
+}
+#image-text-2 {
+  color: #fff;
+}
+.service-wrapper .service-right-section .rotate-text {
+  /* margin-top: 250px; */
+  font-family: "bison-outline";
+  margin-left: 100px;
+  color: var(--darkColor);
+  font-size: 200px;
+  position: relative;
+  right: 120px;
+  top: 100px;
+  z-index: 10000;
+  transform: rotate(-90deg);
+}
+
+#service::after {
+  content: "Services";
   position: absolute;
   top: 160px;
   z-index: 10000;
