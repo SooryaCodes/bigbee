@@ -1,0 +1,35 @@
+/* Fonts 
+==============================*/
+
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+/* Bison Font Configure
+===============================*/
+/* Regular */
+@font-face {
+  font-family: bison;
+  src: url("/assets/fonts/Bison-Regular.ttf");
+}
+
+/* Bold */
+@font-face {
+  font-family: bison;
+  font-weight: bold;
+  src: url("/assets/fonts/Bison-Bold.ttf");
+}
+
+/* Medium */
+@font-face {
+  font-family: bison;
+  font-weight: medium;
+  src: url("/assets/fonts/Bison-DemiBold.ttf");
+}
+
+/* Thick Outline */
+@font-face {
+  font-family: bison;
+  font-weight: thick;
+  src: url("/assets/fonts/Bison-ThickOutline.ttf");
+}
+
