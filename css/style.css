@@ -7,11 +7,20 @@
   box-sizing: border-box;
 }
 
+/* Selection */
+
+::selection {
+  background: rgba(255, 236, 65, 0.466);
+  color: var(--darkColor);
+}
+
 /* Body
 ==================================== */
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 300vh;
+  display: flex;
+  justify-content: center;
   background: var(--darkColor);
 }
 
@@ -19,7 +28,10 @@ body {
 =====================================*/
 .section-wrapper {
   position: relative;
-  width: 100%;
+  width: 75%;
+  display: flex;
+  min-height: 300vh;
+  justify-content: center;
   height: 100%;
 }
 
@@ -28,43 +40,39 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   z-index: 0;
   display: flex;
   align-items: flex-end;
 }
 
-.stripes-wrapper .lines{
-    height: 100%;
-    opacity: .3;
-    z-index: -1000 !important;
-    
+.stripes-wrapper .lines {
+  height: 100% !important;
+  opacity: 0.3;
+  z-index: -1000 !important;
 }
-.stripes-wrapper .lines.first{
-    height: 70%;
-    border-left: 1px solid var(--stripeColor);
-    width: 40%;
-
+.stripes-wrapper .lines.first {
+  height: 70%;
+  border-left: 1px solid var(--stripeColor);
+  width: 40%;
 }
-.stripes-wrapper .lines.second{
-    width: 15%;
-    border-left: 1px solid var(--stripeColor);
-    border-right: 1px solid var(--stripeColor);
-
+.stripes-wrapper .lines.second {
+  width: 15%;
+  border-left: 1px solid var(--stripeColor);
+  border-right: 1px solid var(--stripeColor);
 }
 
-.stripes-wrapper .lines.third{
-    width: 40%;
-    border-right: 1px solid var(--stripeColor);
-    /* border-left: 1px solid var(--stripeColor); */
-    height: 80%;
-
+.stripes-wrapper .lines.third {
+  width: 40%;
+  border-right: 1px solid var(--stripeColor);
+  /* border-left: 1px solid var(--stripeColor); */
+  height: 80%;
 }
 /* Home 
 =====================================*/
 .home-wrapper {
   width: 100%;
-  min-height: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,10 +80,10 @@ body {
 
 /* Home Left Section */
 .home-wrapper .home-left-section {
-    padding-left: 30px;
+  padding-left: 30px;
   position: relative;
   width: 50%;
-  min-height: 100vh !important;
+  min-height: 100vh ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +99,6 @@ body {
 .home-wrapper .home-left-section .logo img {
   width: 90px;
   height: 90px;
-
 }
 .home-wrapper .home-left-section .left-section-content {
   color: var(--lightColor);
@@ -122,6 +129,7 @@ body {
   color: rgb(139, 139, 139);
   font-family: "raleway";
   letter-spacing: 1px;
+  width: 75%;
 }
 .home-wrapper .home-left-section .left-section-content .home-btn {
   margin-top: 30px;
@@ -159,15 +167,43 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
+.home-wrapper .home-right-section .home-image {
+  position: absolute;
+  z-index: 100000000000000000;
+  right: 350px;
+  width: 300px;
+  top: 100px;
+  height: 600px;
+}
+.home-wrapper .home-right-section .home-image img {
+  width: 200px;
+}
+
+.home-wrapper .home-right-section .home-image p {
+  font-size: 14px;
+  letter-spacing: 5px;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 250px;
+  left: -100px;
+  color: var(--lightColor);
+  font-family: "bison-medium";
+}
+#image-text {
+  color: var(--themeColor);
+}
 .home-wrapper .home-right-section .rotate-text {
-  margin-top: 250px;
+  /* margin-top: 250px; */
   font-family: "bison-outline";
   margin-left: 100px;
   color: var(--lightColor);
-  font-size: 150px;
+  font-size: 200px;
   position: relative;
+  right: 120px;
+  top: 100px;
   z-index: 10000;
   transform: rotate(-90deg);
 }
@@ -175,8 +211,7 @@ body {
 #bigbee::after {
   content: "MEDIA";
   position: absolute;
-  top: 130px;
+  top: 160px;
   z-index: 10000;
-  left: 120px;
+  left: 200px;
 }
-

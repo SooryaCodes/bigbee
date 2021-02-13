@@ -1,0 +1,60 @@
+/* Home Responsive 
+==================================================*/
+
+@media screen and (max-width: 1393px) {
+  .home-wrapper .home-right-section .home-image {
+    right: 200px !important;
+    top: 250px !important;
+  }
+  .home-wrapper .home-right-section .home-image img {
+    width: 150px !important;
+  }
+}
+
+@media screen and (max-width: 1261px) {
+    .home-wrapper .home-right-section .home-image {
+        right: -60px !important;
+        top: 250px !important;
+      }
+      .home-wrapper .home-right-section .home-image img {
+        width: 200px !important;
+      }
+
+      .home-wrapper .home-right-section .home-image p {
+          bottom:-130px !important;
+      }
+
+  .home-wrapper .home-left-section .left-section-content p {
+    width: 100% !important;
+  }
+
+  .home-wrapper .home-right-section .rotate-text {
+    font-size: 170px !important;
+  }
+
+  #bigbee::after{
+    top: 140px !important;
+
+  }
+}
+
+
+@media screen and (max-width:848px){
+    .home-wrapper .home-left-section .logo{
+        top: 60px !important;
+        left: -30px !important;
+    }
+    .home-wrapper .home-left-section .logo img {
+        width: 60px !important;
+        height: 60px !important;
+      }
+    .home-wrapper{
+        flex-direction: column !important;
+    }
+
+    .home-wrapper .home-left-section ,.home-wrapper .home-right-section{
+        width: 100% !important;
+        height:75vh !important;
+        padding: 0 !important;
+    }
+}
