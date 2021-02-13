@@ -14,22 +14,18 @@
 
 /* Bold */
 @font-face {
-  font-family: bison;
-  font-weight: bold;
+  font-family: bison-bold;
   src: url("/assets/fonts/Bison-Bold.ttf");
 }
 
 /* Medium */
 @font-face {
-  font-family: bison;
-  font-weight: medium;
+  font-family: bison-medium;
   src: url("/assets/fonts/Bison-DemiBold.ttf");
 }
 
 /* Thick Outline */
 @font-face {
-  font-family: bison;
-  font-weight: thick;
+  font-family: bison-outline;
   src: url("/assets/fonts/Bison-ThickOutline.ttf");
 }
-
