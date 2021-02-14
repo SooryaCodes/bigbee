@@ -18,7 +18,7 @@
 ==================================== */
 body {
   width: 100%;
-  min-height: 300vh;
+  height: 10000px;
   display: flex;
   justify-content: center;
   background: var(--darkColor);
@@ -243,10 +243,9 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  
 }
 
-.service{
+.service {
   margin-bottom: 20px;
 }
 
@@ -299,9 +298,6 @@ body {
   right: -35px;
 }
 
-
-
-
 /* Service Right Section
 =================================================== */
 .service-wrapper .service-right-section {
@@ -319,7 +315,7 @@ body {
   z-index: 100000000000000000;
   right: 450px;
   width: 300px;
-  top: 100px;
+  top: 200px;
   height: 600px;
 }
 .service-wrapper .service-right-section .service-image img {
@@ -358,4 +354,139 @@ body {
   top: 160px;
   z-index: 10000;
   left: 200px;
+}
+
+/* Project Section */
+
+.project-wrapper {
+  width: 75%;
+  display: none;
+  position: relative;
+  display: flex;
+  height: 1200px;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Project Left Section
+=================================== */
+
+.project-wrapper .project-left-section {
+  width: 50%;
+  color: var(--lightColor);
+  display: flex;
+  padding-left: 30px;
+  height: 1200px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project-wrapper .project-left-section .rotate-text {
+  /* margin-top: 250px; */
+  font-family: "bison-outline";
+  margin-left: 100px;
+  color: var(--lightColor);
+  font-size: 200px;
+  position: relative;
+  right: 320px;
+  top: 300px;
+  z-index: 10000;
+  transform: rotate(-90deg);
+}
+
+#project::after {
+  content: "Projects";
+  position: absolute;
+  top: 160px;
+  z-index: 10000;
+  left: 200px;
+}
+
+.project-wrapper .project-left-section .project-image {
+  position: absolute;
+  z-index: 100000000000000000;
+  left: 300px;
+  width: 300px;
+  top: -60px;
+  height: 600px;
+}
+
+.project-wrapper .project-left-section .project-image p {
+  font-size: 14px;
+  letter-spacing: 5px;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 10px;
+  left: -200px;
+  color: var(--lightColor);
+  font-family: "bison-medium";
+}
+#image-text-3 {
+  color: var(--themeColor);
+}
+
+/* project Right Section
+=================================================== */
+.project-wrapper .project-right-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1200px;
+  font-family: 'bison-medium';
+  font-size: 30px;
+  letter-spacing: 4px;
+  flex-direction: column;padding-top: 120px;
+}
+
+.project-right-section .project1{
+  width: 100%;
+  height: 50%;
+  color: var(--lightColor);
+  display: flex;
+  align-items: flex-start;justify-content: center;flex-direction: column;
+}
+
+.project-right-section .project2{
+  width: 100%;
+  height: 50%;
+  color: var(--lightColor);
+  display: flex;
+  align-items: flex-end;justify-content: center;flex-direction: column;
+}
+.project-right-section img{
+width: 600px;
+}
+
+
+
+.project-wrapper .project-right-section .project-btn {
+  position: relative;
+  margin-top: 50px;
+  /* margin-bottom: 100px; */
+}
+.project-wrapper .project-right-section .project-btn hr {
+  position: absolute;
+  width: 50px;
+  height: 1.5px;
+  bottom: 5px;
+  transition: 0.4s ease-in-out;
+  right: -20px;
+  background: var(--themeColor) !important;
+}
+.project-wrapper .project-right-section .project-btn button {
+  width: 180px;
+  height: 45px;
+  background: none;
+  font-family: "bison";
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: var(--lightColor);
+  border: 2px solid var(--lightColor);
+}
+
+.project-btn:hover #btn-hr3 {
+  right: -35px;
 }
