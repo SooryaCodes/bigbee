@@ -66,7 +66,7 @@
   .home-wrapper .home-right-section .home-image {
     right: 0px !important;
   }
-  .home-wrapper .home-right-section .home-image p{
+  .home-wrapper .home-right-section .home-image p {
     right: 200px !important;
     width: 200px;
   }
@@ -130,12 +130,14 @@
     width: 100% !important;
     height: 100vh !important;
     /* padding: 0 !important; */
+
     padding-top: 280px;
   }
   .service-wrapper .service-left-section {
     width: 100% !important;
     height: 1300px !important;
-    padding: 0 !important;
+    /* padding: 0 !important; */
+    padding-left: 20px !important;
   }
 
   .service-wrapper .service-left-section .service p {
@@ -146,7 +148,7 @@
 @media screen and (max-width: 679px) {
   .service-wrapper .service-right-section .service-image {
     right: -50px !important;
-    top: 200px !important;
+    top: 400px !important;
   }
   .service-wrapper .service-right-section .service-image img {
     width: 200px !important;
@@ -154,6 +156,10 @@
 
   .service-wrapper .service-right-section .service-image p {
     bottom: 330px !important;
+  }
+  #service:after {
+    top: 100px !important;
+    left: 150px !important;
   }
 }
 
@@ -270,7 +276,7 @@
   .project-wrapper .project-left-section .project-image {
     left: 0px !important;
   }
-  .project-wrapper .project-left-section .project-image p{
+  .project-wrapper .project-left-section .project-image p {
     left: 0px !important;
     width: 200px;
   }
@@ -278,16 +284,113 @@
   .project-wrapper .project-left-section .rotate-text {
     left: -120px !important;
   }
-  
-
-  
 }
-
-
-
-
-
 
 /* About Section
 ======================================================================= */
 
+@media screen and (max-width: 1604px) {
+  .about-section .about-left-section .rotate-text {
+    right: 190px !important;
+  }
+}
+
+@media screen and (max-width: 1149px) {
+  .about-right-section {
+    padding: 50px !important;
+  }
+  .about-section .about-left-section .rotate-text {
+    font-size: 170px !important;
+  }
+  #about:after {
+    top: 140px !important;
+  }
+  .about-right-section .top-section {
+    width: 450px !important;
+  }
+  .about-right-section .bottom-section {
+    width: 450px !important;
+  }
+  .about-right-section .top-section p {
+    font-size: 14px !important;
+  }
+  .about-right-section .bottom-section .team {
+    width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 931px) {
+  .about-section {
+    height: 1500px !important;
+    flex-direction: column;
+  }
+  .about-section .about-left-section .rotate-text {
+    right: 120px !important;
+  }
+  .about-right-section,
+  .about-left-section {
+    width: 90% !important;
+  }
+  .about-left-section {
+    padding-top: 200px !important;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .about-right-section,
+  .about-left-section {
+    width: 120% !important;
+  }
+  .about-right-section .top-section {
+    width: 400px !important;
+  }
+  .about-right-section .top-section p {
+    width: 440px !important;
+  }
+  .about-right-section .top-section h4 {
+    font-size: 30px !important;
+  }
+  .about-right-section .bottom-section h3 {
+    font-size: 25px !important;
+  }
+  .about-right-section .bottom-section .team span {
+    font-size: 22px !important;
+  }
+  .about-right-section .bottom-section {
+    width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .about-right-section {
+    padding: 0 !important;
+  }
+
+  .about-right-section .top-section {
+    width: 100% !important;
+  }
+  .about-right-section .top-section p {
+    width: 100% !important;
+  }
+  .about-right-section .top-section h4 {
+    font-size: 30px !important;
+  }
+  .about-right-section .bottom-section h3 {
+    font-size: 25px !important;
+  }
+  .about-right-section .bottom-section .team span {
+    font-size: 22px !important;
+  }
+  .about-right-section .bottom-section {
+    width: 100% !important;
+  }
+
+  .about-right-section .bottom-section .team {
+    width: 90% !important;
+  }
+
+  .about-section .about-left-section .rotate-text {
+    font-size: 150px !important;
+right: 160px !important;
+  }
+}
