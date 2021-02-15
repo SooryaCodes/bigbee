@@ -5,6 +5,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Selection */
@@ -18,7 +19,6 @@
 ==================================== */
 body {
   width: 100%;
-  height: 10000px;
   display: flex;
   justify-content: center;
   background: var(--darkColor);
@@ -572,7 +572,7 @@ body {
 }
 
 .about-right-section .top-section {
-  width:500px;
+  width: 500px;
   display: flex;
   color: var(--darkColor);
   align-items: flex-start;
@@ -615,30 +615,111 @@ body {
   font-family: "bison-bold";
   letter-spacing: 2px;
 }
-.about-right-section .bottom-section .team{
+.about-right-section .bottom-section .team {
   width: 390px;
   display: flex;
   height: 40px;
-  align-items: center;justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-right-section .bottom-section .team span{
+.about-right-section .bottom-section .team span {
   width: 50%;
   font-size: 25px;
-  font-family: 'bison-bold';
+  font-family: "bison-bold";
   display: flex;
   letter-spacing: 1.4px;
-  align-items: center;justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.about-right-section .bottom-section .team p{
+.about-right-section .bottom-section .team p {
   width: 50%;
-  font-family: 'bison-medium';
+  font-family: "bison-medium";
   font-size: 20px;
   display: flex;
   letter-spacing: 1px;
   margin: 0 !important;
-  align-items: center;justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+/* Footer Section */
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: var(--lightColor);
+  /* background: var(--darkColor); */
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-first,
+.footer-second,
+.footer-third {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-first h2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-family: "bison-bold";
+}
+
+.footer-first span {
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-family: "bison-medium";
+}
+
+.footer-first p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-family: "raleway";
+}
+
+.footer-second span {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: "bison-bold";
+}
+
+.footer-second a {
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 2px;
+  color: var(--lightColor);
+  font-family: "bison";
+  margin: 0 !important;
+}
+.footer-third a {
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 2px;
+  color: var(--lightColor);
+  font-family: "bison-medium";
+  margin: 0 !important;
+}
+
+
+
+
+
 
 

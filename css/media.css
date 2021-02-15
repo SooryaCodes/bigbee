@@ -394,3 +394,22 @@
 right: 160px !important;
   }
 }
+
+
+
+
+
+
+
+
+
+/* Footer Section
+================================================================= */
+
+@media screen and (max-width:758px){
+  
+.footer{
+  justify-content: flex-start !important;
+  height: 250px !important;
+}
+}
