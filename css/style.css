@@ -18,7 +18,7 @@ html{
 .cursor {
   width: 3rem;
   height: 3rem;
-  border: 2px solid rgb(168, 168, 168);
+  border: 2px solid var(--lightColor);
   border-radius: 50%;
   position: absolute;
   z-index: 100000000000000000000;
@@ -33,13 +33,24 @@ html{
   background: black;
 transform: scale(2);
   border: none;
-  z-index: 100000;
+  z-index:1;
+
+}
+.cursor.cursor-yellow.active{
+  transform: scale(2);
+    border: none;  border: 2px solid var(--darkColor);
+background: none !important;
+    z-index: 2;
+  
+}
+.cursor.cursor-yellow{
+  border: 2px solid var(--darkColor);
 }
 /* =============================== */
 /* Selection */
 
 ::selection {
-  background: rgba(255, 236, 65, 0.466);
+  background: rgba(224, 221, 192, 0.466);
   color: var(--darkColor);
 }
 
@@ -116,7 +127,7 @@ body {
 
 /* Menu Section 
 =======================================================================*/
-
+/* 
 .menu {
   position: fixed;
   top: 100px;
@@ -149,7 +160,7 @@ body {
 }
 .menu.active .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
-}
+} */
 /* ===================================== */
 
 /* Nav Section 
@@ -394,7 +405,7 @@ nav.active {
   position: relative;
   margin-top: 50px;
   /* margin-bottom: 100px; */
-  z-index: 10000000000 !important;
+  z-index: 100000000000 !important;
 }
 .service-wrapper .service-left-section .service-btn hr {
   position: absolute;
@@ -407,8 +418,8 @@ nav.active {
 }
 .service-wrapper .service-left-section .service-btn button {
   width: 180px;cursor: none;
-  height: 45px;
-  z-index: 10000000000000000;
+  height: 45px;  z-index: 100000000000 !important;
+
   background: none;
   font-family: "bison";
   letter-spacing: 2px;
@@ -591,7 +602,7 @@ nav.active {
 .project-wrapper .project-right-section .project-btn {
   position: relative;
   margin-top: 50px;
-  z-index: 1000000000000000000;
+  z-index: 10000000000;
 
   /* margin-bottom: 100px; */
 }

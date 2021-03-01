@@ -1,30 +1,30 @@
 /* Hamburger Menu Animation & Nav Toggle
 ===========================================*/
 
-//Getting Menu
-var menu = document.querySelector('.menu')
+// //Getting Menu
+// var menu = document.querySelector('.menu')
 
-//Getting Nav
-var nav = document.querySelector('.nav')
+// //Getting Nav
+// var nav = document.querySelector('.nav')
 
 //Getting Yellow Containers
 var yellowContainers = document.querySelectorAll('.yellow-container')
 
-//Getting Stripes-Wrapper
-var stripesWrapper = document.querySelector('.stripes-wrapper')
+// //Getting Stripes-Wrapper
+// var stripesWrapper = document.querySelector('.stripes-wrapper')
 
-//menuNav Toggle Function
-const menuNavToggle = () => {
-    menu.classList.toggle('active')
-    nav.classList.toggle('active')
-    stripesWrapper.classList.toggle('active')
-}
+// //menuNav Toggle Function
+// const menuNavToggle = () => {
+//     menu.classList.toggle('active')
+//     nav.classList.toggle('active')
+//     stripesWrapper.classList.toggle('active')
+// }
 
-//Adding Click Listener
-menu.addEventListener('click',/* Menu & Nav Active Class Toggle Function*/  menuNavToggle );
+// //Adding Click Listener
+// menu.addEventListener('click',/* Menu & Nav Active Class Toggle Function*/  menuNavToggle );
 
-/* End 
-================================*/
+// /* End 
+// ================================*/
 
 /* Custom Mouse Cursor
 ================================================ */
@@ -38,7 +38,7 @@ var buttons = document.querySelectorAll('button')
 const triggerCursor = (e) =>/*Styling Cursor */ cursor.setAttribute('style', `top:${e.pageY}px;left:${e.pageX}px`)
 
 //Function btnCursorAnimation
-const btnCursorAnimation = () => console.log('Hey');
+const btnCursorAnimation = () => cursor.classList.add('active')
 
 //Function remBtnCursorAnimation
 const remBtnCursorAnimation = () => cursor.classList.remove('active')
