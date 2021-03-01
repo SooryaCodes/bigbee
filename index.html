@@ -1,286 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>BigBee</title>
     <!-- Image -->
-    <link rel="icon" href="/assets/images/Logo/bigbee-01.png" type="image/png">
-    <!-- Font Awesome Kit  -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link
+      rel="icon"
+      href="/assets/images/Logo/bigbee-01.png"
+      type="image/png"
+    />
+    <!-- Remix Icons  Kit  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <!-- Fonts StyleSheet -->
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css" />
     <!-- Root StyleSheet -->
-    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/root.css" />
     <!-- Responsive StyleSheet -->
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media.css" />
     <!-- CSS StyleSheet -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Cursor
+    ================================================================================== -->
+    <div class="cursor"></div>
+    <!-- End Cursor ======================================= -->
 
     <!-- Main Section
         ==========================================================================================  -->
-    <section class="section-wrapper ">
+    <section class="section-wrapper">
+      <!-- Stripes -->
+      <div class="stripes-wrapper">
+        <div class="lines first"></div>
+        <div class="lines second"></div>
+        <div class="lines third"></div>
+      </div>
 
-        <!-- Stripes -->
-        <div class="stripes-wrapper">
-            <div class="lines first"></div>
+      <!-- Menu Section
+      =============================================================================================== -->
+      <div class="menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- ============================================================================== -->
+
+      <!-- Nav Section 
+        ===================================================================================-->
+      <nav
+        class="container-fluid nav"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--darkColor);
+          padding: 0 !important;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          height: 100vh;
+        "
+      >
+        <div class="home-wrapper">
+          <!-- Home Left Section -->
+          <div class="home-left-section">
+            <div class="logo">
+              <img src="/assets/images/Logo/bigbee-01.png" alt="" />
+            </div>
+          </div>
+          <!-- ======================== -->
+          <div class="home-right-section">
+            <div class="rotate-text">
+              <span id="bigbee">BIGBEE <br /></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ============================================================================== -->
+
+      <!-- Home Section
+            ========================================================================================== -->
+      <div
+        class="container-fluid"
+        id="Home"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--darkColor);
+          padding: 0 !important;
+        "
+      >
+        <div class="home-wrapper">
+          <!-- Home Left Section -->
+          <div class="home-left-section">
+            <div class="logo">
+              <img src="/assets/images/Logo/bigbee-01.png" alt="" />
+            </div>
+            <div class="left-section-content">
+              <h1 class="home-title">
+                We Are <br /><strong>BigBee</strong> Media
+              </h1>
+              <hr id="home-title-bar" />
+              <p id="home-paragaraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Suscipit corporis delectus dolore officiis deleniti nihil
+                voluptas esse possimus similique iusto, nostrum dignissimos
+                error accusantium odit at saepe exercitationem velit blanditiis!
+              </p>
+              <div class="home-btn">
+                <button>View Projects</button>
+                <hr id="btn-hr" />
+              </div>
+            </div>
+          </div>
+          <!-- ======================== -->
+          <div class="home-right-section">
+            <div class="home-image">
+              <p>Team Of <span id="image-text">Creatives</span></p>
+              <img
+                src="https://redneck.media/redneck/wp-content/themes/redneck/img/sculpture.png.webp"
+                alt=""
+                id="home-image"
+              />
+            </div>
+            <div class="rotate-text">
+              <span id="bigbee">BIGBEE <br /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =========================== -->
+
+      <!-- Service Section
+            ========================================================================================== -->
+
+      <div
+        class="yellow-container container-fluid p-0"
+        id="Service"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--themeColor);
+          margin-top: 100px !important;
+          z-index: 1;
+          padding: 0 !important;
+        "
+      >
+        <div class="service-wrapper">
+          <!-- Stripes -->
+          <div class="stripes-wrapperYellow">
+            <div class="lines" id="YellowStripes"></div>
             <div class="lines second"></div>
             <div class="lines third"></div>
-        </div>
-        <!-- Home Section
-            ========================================================================================== -->
-        <div class="container-fluid " id="Home"
-            style="display: flex;align-items: center;justify-content: center;background: var(--darkColor) ;padding: 0 !important;">
-            <div class="home-wrapper">
-                <!-- Home Left Section -->
-                <div class="home-left-section">
-                    <div class="logo">
-                        <img src="/assets/images/Logo/bigbee-01.png" alt="">
-                    </div>
-                    <div class="left-section-content">
-                        <h1>We Are <br><strong>BigBee</strong> Media</h1>
-                        <hr>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit corporis delectus dolore
-                            officiis deleniti nihil voluptas esse possimus similique iusto, nostrum dignissimos error
-                            accusantium odit at saepe exercitationem velit blanditiis!</p>
-                        <div class="home-btn">
-                            <button>View Projects</button>
-                            <hr id="btn-hr">
-                        </div>
-                    </div>
-                </div>
-                <!-- ======================== -->
-                <div class="home-right-section">
-                    <div class="home-image">
-                        <p>Team Of <span id="image-text">Creatives</span></p>
-                        <img src="https://redneck.media/redneck/wp-content/themes/redneck/img/sculpture.png.webp"
-                            alt="">
-                    </div>
-                    <div class="rotate-text">
-                        <span id="bigbee">BIGBEE <br></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- =========================== -->
-
-        <!-- Service Section
-            ========================================================================================== -->
-
-        <div class="container-fluid p-0" id="Service"
-            style="display: flex;align-items: center;justify-content: center;background: var(--themeColor);margin-top: 100px !important;z-index: 1;padding: 0 !important;">
-            <div class="service-wrapper ">
-                <!-- Stripes -->
-                <div class="stripes-wrapperYellow">
-                    <div class="lines  " id="YellowStripes"></div>
-                    <div class="lines second"></div>
-                    <div class="lines third"></div>
-                </div>
-                <!-- Service Left Section
+          </div>
+          <!-- Service Left Section
                 ========================================== -->
-                <div class="service-left-section">
-                    <div class="service">
-                        <h4>Graphic Designing</h4>
-                        <p>Where we come from there's a saying equivalent to: „grain by grain, the hen fills her belly“.
-                            We might not know much of sayings or hens, but we're good at creating websites.
-                        </p>
-                    </div>
-                    <div class="service">
-                        <h4>Art</h4>
-                        <p>Where we come from there's a saying equivalent to: „grain by grain, the hen fills her belly“.
-                            We might not know much of sayings or hens, but we're good at creating websites.
-                        </p>
-                    </div>
-                    <div class="service">
-                        <h4>Digital Marketing</h4>
-                        <p>Where we come from there's a saying equivalent to: „grain by grain, the hen fills her belly“.
-                            We might not know much of sayings or hens, but we're good at creating websites.
-                        </p>
-                    </div>
-                    <div class="service">
-                        <h4>SEO</h4>
-                        <p>Where we come from there's a saying equivalent to: „grain by grain, the hen fills her belly“.
-                            We might not know much of sayings or hens, but we're good at creating websites.
-                        </p>
-                    </div>
-                    <div class="service">
-                        <h4>2D Ad's</h4>
-                        <p>Where we come from there's a saying equivalent to: „grain by grain, the hen fills her belly“.
-                            We might not know much of sayings or hens, but we're good at creating websites.
-                        </p>
-                    </div>
-
-                    <div class="service-btn">
-                        <button>Contact Us</button>
-                        <hr id="btn-hr2">
-                    </div>
-                </div>
-                <!-- ========================================== -->
-
-                <!-- Service Right Section
-                ========================================== -->
-                <div class="service-right-section">
-                    <div class="service-image">
-                        <p>Team Of <span id="image-text-2">Creatives</span></p>
-                        <img src="https://redneck.media/redneck/wp-content/themes/redneck/img/dogstatute.png.webp"
-                            alt="">
-                    </div>
-                    <div class="rotate-text">
-                        <span id="service">our <br></span>
-                    </div>
-                </div>
-                <!--========================================= -->
+          <div class="service-left-section">
+            <div class="service">
+              <h4>Graphic Designing</h4>
+              <p>
+                Where we come from there's a saying equivalent to: „grain by
+                grain, the hen fills her belly“. We might not know much of
+                sayings or hens, but we're good at creating websites.
+              </p>
             </div>
-            <!-- ================================ -->
+            <div class="service">
+              <h4>Art</h4>
+              <p>
+                Where we come from there's a saying equivalent to: „grain by
+                grain, the hen fills her belly“. We might not know much of
+                sayings or hens, but we're good at creating websites.
+              </p>
+            </div>
+            <div class="service">
+              <h4>Digital Marketing</h4>
+              <p>
+                Where we come from there's a saying equivalent to: „grain by
+                grain, the hen fills her belly“. We might not know much of
+                sayings or hens, but we're good at creating websites.
+              </p>
+            </div>
+            <div class="service">
+              <h4>SEO</h4>
+              <p>
+                Where we come from there's a saying equivalent to: „grain by
+                grain, the hen fills her belly“. We might not know much of
+                sayings or hens, but we're good at creating websites.
+              </p>
+            </div>
+            <div class="service">
+              <h4>2D Ad's</h4>
+              <p>
+                Where we come from there's a saying equivalent to: „grain by
+                grain, the hen fills her belly“. We might not know much of
+                sayings or hens, but we're good at creating websites.
+              </p>
+            </div>
+
+            <div class="service-btn">
+              <button>Contact Us</button>
+              <hr id="btn-hr2" />
+            </div>
+          </div>
+          <!-- ========================================== -->
+
+          <!-- Service Right Section
+                ========================================== -->
+          <div class="service-right-section">
+            <div class="service-image">
+              <p>Team Of <span id="image-text-2">Creatives</span></p>
+              <img
+                src="https://redneck.media/redneck/wp-content/themes/redneck/img/dogstatute.png.webp"
+                alt=""
+              />
+            </div>
+            <div class="rotate-text">
+              <span id="service">our <br /></span>
+            </div>
+          </div>
+          <!--========================================= -->
         </div>
+        <!-- ================================ -->
+      </div>
 
-
-
-        <!-- Project Section
+      <!-- Project Section
         =============================================================================== -->
 
-        <div class="container-fluid p-0" id="Project"
-            style="display: flex;align-items: center;justify-content: center;margin-top: 200px;z-index: 1;padding: 0 !important;">
-            <div class="project-wrapper">
-                <div class="project-left-section">
-                    <div class="project-image">
-                        <p>We Are For <span id="image-text-3">You</span></p>
-                    </div>
-                    <div class="rotate-text">
-                        <span id="project">our <br></span>
-                    </div>
-                </div>
-                <div class="project-right-section">
-                    <div class="project1 p-first">
-                        <img src="https://redneck.media/redneck/wp-content/uploads/2020/02/zenn-725x345.jpg.webp"
-                            alt="">
-                        <p>Zen's Photo</p>
-                    </div>
-                    <div class="project2 p-second">
-                        <img src="https://redneck.media/redneck/wp-content/uploads/2020/02/lavergne-725x345.jpg.webp"
-                            alt="">
-                        <p>Zen's Photo</p>
-                    </div>
-                    <div class="project-btn">
-                        <button>View More</button>
-                        <hr id="btn-hr3">
-                    </div>
-                </div>
+      <div
+        class="container-fluid p-0"
+        id="Project"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 200px;
+          z-index: 1;
+          padding: 0 !important;
+        "
+      >
+        <div class="project-wrapper">
+          <div class="project-left-section">
+            <div class="project-image">
+              <p>We Are For <span id="image-text-3">You</span></p>
             </div>
+            <div class="rotate-text">
+              <span id="project">our <br /></span>
+            </div>
+          </div>
+          <div class="project-right-section">
+            <div class="project1 p-first">
+              <img
+                src="https://redneck.media/redneck/wp-content/uploads/2020/02/zenn-725x345.jpg.webp"
+                alt=""
+              />
+              <p>Zen's Photo</p>
+            </div>
+            <div class="project2 p-second">
+              <img
+                src="https://redneck.media/redneck/wp-content/uploads/2020/02/lavergne-725x345.jpg.webp"
+                alt=""
+              />
+              <p>Zen's Photo</p>
+            </div>
+            <div class="project-btn">
+              <button>View More</button>
+              <hr id="btn-hr3" />
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- About Section
+      <!-- About Section
         =============================================================================== -->
 
-        <div class="container-fluid p-0" id="About"
-            style="display: flex;align-items: center;justify-content: center;margin-top: 200px;z-index: 1;background:var(--themeColor) ;padding: 0 !important;">
-            <div class="about-section">
-                <!-- Stripes -->
-                <div class="stripes-wrapperYellow">
-                    <div class="lines  " id="YellowStripes"></div>
-                    <div class="lines second"></div>
-                    <div class="lines third"></div>
-                </div>
-                <div class="about-left-section">
-
-                    <div class="rotate-text">
-                        <span id="about">About <br></span>
-                    </div>
-                </div>
-                <div class="about-right-section">
-                    <div class="top-section">
-                        <h4>We Are Bigbee media</h4>
-                        <p>This ain't our first rodeo.
-                            Redneck is a team of tough, experienced, creative and
-                            open-minded people, passionate about everything digital.
-                            We're developers as fine as a smooth Tennessee whiskey.
-                            Except we’re actually into cold hard beer
-                        </p>
-                        <hr>
-                    </div>
-                    <div class="bottom-section">
-                        <h3>Our team</h3>
-                        <div class="team">
-                            <span>Krishnaprasadh</span>
-                            <p>Graphic Designer</p>
-                        </div>
-                        <div class="team">
-                            <span>Vivek</span>
-                            <p>Graphic Designer</p>
-                        </div>
-                        <div class="team">
-                            <span>Alphi</span>
-                            <p>Artist</p>
-                        </div>
-                    </div>
-                </div>
+      <div
+        class="yellow-container container-fluid p-0"
+        id="About"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 200px;
+          z-index: 1;
+          background: var(--themeColor);
+          padding: 0 !important;
+        "
+      >
+        <div class="about-section">
+          <!-- Stripes -->
+          <div class="stripes-wrapperYellow">
+            <div class="lines" id="YellowStripes"></div>
+            <div class="lines second"></div>
+            <div class="lines third"></div>
+          </div>
+          <div class="about-left-section">
+            <div class="rotate-text">
+              <span id="about">About <br /></span>
             </div>
+          </div>
+          <div class="about-right-section">
+            <div class="top-section">
+              <h4>We Are Bigbee media</h4>
+              <p>
+                This ain't our first rodeo. Redneck is a team of tough,
+                experienced, creative and open-minded people, passionate about
+                everything digital. We're developers as fine as a smooth
+                Tennessee whiskey. Except we’re actually into cold hard beer
+              </p>
+              <hr />
+            </div>
+            <div class="bottom-section">
+              <h3>Our team</h3>
+              <div class="team">
+                <span>Krishnaprasadh</span>
+                <p>Graphic Designer</p>
+              </div>
+              <div class="team">
+                <span>Vivek</span>
+                <p>Graphic Designer</p>
+              </div>
+              <div class="team">
+                <span>Alphi</span>
+                <p>Artist</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Footer Section
+      <!-- Contact Section 
+    =============================================================================-->
+      <!-- <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--darkColor);
+          padding: 0 !important;
+        "
+        id="Contact"
+        class="container-fluid"
+      >
+        <div class="contact-section">
+          <div class="contact-left-section"></div>
+          <div class="contact-right-section">
+            <form action="#">
+                
+            </form>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Footer Section
         ================================================================== -->
-        <footer>
-            <div class="container-fluid" style="width: 90% !important;" id="footer">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-4 ">
-                        <div class=" footer ">
-                            <div class="footer-first">
-
-                                <h2> BIGBEE MEDIA </h2>
-                                <span>DIGITAL MARKETING COMAPANY SINCE 2020</span>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum hic sed officia vitae
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 ">
-                        <div class=" footer">
-                            <div class="footer-second">
-
-                                <span>SERVICES</span>
-                                <a href="">GRAPHIC DESIGNING</a>
-                                <a href="">ARTS</a>
-                                <a href="">DIGITAL MARKETING</a>
-                                <a href="">SEO</a>
-                                <a href="">2D AD's</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 ">
-                        <div class=" footer">
-                            <div class="footer-third">
-
-                                <a href="">INSTAGRAM</a>
-                                <a href="">FACEBOOK</a>
-                                <a href="">WHATSAPP</a>
-                            </div>
-                        </div>
-                    </div>
+      <footer>
+        <div class="container-fluid" style="width: 90% !important" id="footer">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-4">
+              <div class="footer">
+                <div class="footer-first">
+                  <h2>BIGBEE MEDIA</h2>
+                  <span>DIGITAL MARKETING COMAPANY SINCE 2020</span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum hic sed officia vitae
+                  </p>
                 </div>
+              </div>
             </div>
-        </footer>
+            <div class="col-12 col-sm-12 col-md-4">
+              <div class="footer">
+                <div class="footer-second">
+                  <span>SERVICES</span>
+                  <a href="">GRAPHIC DESIGNING</a>
+                  <a href="">ARTS</a>
+                  <a href="">DIGITAL MARKETING</a>
+                  <a href="">SEO</a>
+                  <a href="">2D AD's</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+              <div class="footer">
+                <div class="footer-third">
+                  <a href="">INSTAGRAM</a>
+                  <a href="">FACEBOOK</a>
+                  <a href="">WHATSAPP</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
     <!-- ============================ -->
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scroll Triger CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+      integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- GSAP Js File -->
+    <script src="./js/gsap.js"></script>
     <!-- Script Js File -->
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
