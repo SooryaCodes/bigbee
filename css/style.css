@@ -9,19 +9,26 @@
 }
 
 /* HTML */
-html{
+html {
   overflow-x: hidden;
 }
+
+/* Common Style */
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
 /* Cursor 
 ==================================*/
 
 .cursor {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border: 2px solid var(--lightColor);
   border-radius: 50%;
   position: absolute;
-  z-index: 100000000000000000000;
+  z-index: 1000000000000000000;
   pointer-events: none;
   transition-duration: 200ms;
   transform-origin: 100% 100%;
@@ -29,28 +36,26 @@ html{
   transform: translate(-50%, -50%);
 }
 
-.cursor.active{
-  background: black;
-transform: scale(2);
-  border: none;
-  z-index:1;
-
-}
-.cursor.cursor-yellow.active{
+.cursor.active {
+  background: rgba(204, 204, 204, 0.39);
   transform: scale(2);
-    border: none;  border: 2px solid var(--darkColor);
-background: none !important;
-    z-index: 2;
-  
+  border: none;
+  z-index: 100000000000;
 }
-.cursor.cursor-yellow{
+.cursor.cursor-yellow.active {
+  transform: scale(2);
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.cursor.cursor-yellow {
   border: 2px solid var(--darkColor);
 }
 /* =============================== */
 /* Selection */
 
 ::selection {
-  background: rgba(224, 221, 192, 0.466);
+  background: rgba(255, 246, 168, 0.466);
   color: var(--darkColor);
 }
 
@@ -127,7 +132,7 @@ body {
 
 /* Menu Section 
 =======================================================================*/
-/* 
+
 .menu {
   position: fixed;
   top: 100px;
@@ -137,19 +142,23 @@ body {
   flex-direction: column;
   right: 100px;
   height: 50px;
-  cursor: pointer;
-  z-index: 10000000000;
+  cursor: none;
+  z-index: 1000000000000000;
 }
-.menu .bar1,
-.menu .bar2,
-.menu .bar3 {
+.menu.menuActive .bar {
+background-color: rgb(209, 209, 209);
+}
+.menu .bar{
   width: 45px;
   height: 3px;
-  background: #fff;
+  background: rgb(117, 117, 117);
   transition: all 0.5s ease-in-out;
 }
 .bar2 {
   width: 25px !important;
+}
+.menu.active {
+  z-index: 1000000000000000;
 }
 .menu.active .bar1 {
   transform: rotate(-45deg) translate(-10px, 10px);
@@ -160,33 +169,112 @@ body {
 }
 .menu.active .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
-} */
+}
 /* ===================================== */
 
 /* Nav Section 
 ==================================================================*/
-
-nav.nav {
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--darkColor);
   width: 100%;
   height: 100vh;
-  position: fixed;
-  background: rgb(14, 14, 14);
-  top: 0;
+  z-index: -1;
   opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  padding: 0 !important;
+  position: fixed;
+  top: 0;
+}
+.nav-wrapper {
+  /* z-index: 10000000000000 !important; */
+  width: 75%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  transition: opacity 0.5s ease-in-out;
-  padding-left: 40px;
-  left: 0;
-  z-index: 9999 !important;
+  align-items: center;
+  justify-content: center;
 }
 
-nav.active {
+.nav-container.active {
   opacity: 1;
+  z-index: 1000000000;
 }
-/* ======================================== */
+/* Nav Left Section
+============================== */
+.nav-wrapper .nav-left-section {
+  width: 50%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.nav-wrapper .nav-left-section .logo {
+  position: relative;
+  left: -40px;
+  top: 100px;
+}
+
+.nav-wrapper .nav-left-section .logo img {
+  width: 90px;
+  height: 90px;
+}
+.nav-wrapper .nav-left-section .nav-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-left: 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  z-index: 1000000000000000;
+}
+.nav-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: "bison-outline";
+}
+/* Nav Right Section
+================================= */
+
+.nav-wrapper .nav-right-section {
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.nav-wrapper .nav-right-section .rotate-text {
+  /* margin-top: 250px; */
+  font-family: "bison-outline";
+  margin-left: 100px;
+  color: var(--lightColor);
+  font-size: 250px;
+  position: relative;
+  right: 120px;
+  top: 100px;
+  z-index: 1000000000;
+  transform: rotate(-90deg);
+}
+
+#bigbee-nav::after {
+  content: "MEDIA";
+  position: absolute;
+  top: 200px;
+  z-index: 10000;
+  left: 200px;
+}
+
+/* End Nav Section ======================================== */
+
 /* Home 
 =====================================================================*/
 .home-wrapper {
@@ -263,8 +351,8 @@ nav.active {
 }
 .home-wrapper .home-left-section .left-section-content .home-btn {
   margin-top: 30px;
-  position: relative;  z-index: 10000000000;
-
+  position: relative;
+  z-index: 100000000;
 }
 .home-wrapper .home-left-section .left-section-content .home-btn hr {
   position: absolute;
@@ -276,7 +364,8 @@ nav.active {
   background: var(--themeColor);
 }
 .home-wrapper .home-left-section .left-section-content .home-btn button {
-  width: 180px;cursor: none;
+  width: 180px;
+  cursor: none;
   height: 45px;
   background: none;
   font-family: "bison";
@@ -417,8 +506,10 @@ nav.active {
   background: var(--darkColor) !important;
 }
 .service-wrapper .service-left-section .service-btn button {
-  width: 180px;cursor: none;
-  height: 45px;  z-index: 100000000000 !important;
+  width: 180px;
+  cursor: none;
+  height: 45px;
+  z-index: 100000000000 !important;
 
   background: none;
   font-family: "bison";
@@ -617,7 +708,8 @@ nav.active {
 }
 .project-wrapper .project-right-section .project-btn button {
   z-index: 1000000000000000000;
-  width: 180px;cursor: none;
+  width: 180px;
+  cursor: none;
   height: 45px;
   background: none;
   font-family: "bison";
