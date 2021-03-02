@@ -1,5 +1,5 @@
 /* CSS Reset 
-===================================*/
+        ===================================*/
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ a {
 }
 
 /* Cursor 
-==================================*/
+        ==================================*/
 
 .cursor {
   width: 2rem;
@@ -60,7 +60,7 @@ a {
 }
 
 /* Body
-==================================== */
+        ==================================== */
 body {
   width: 100%;
   display: flex;
@@ -70,7 +70,7 @@ body {
 }
 
 /* Main Section 
-=====================================*/
+        =====================================*/
 .section-wrapper {
   position: relative;
   width: 100%;
@@ -131,7 +131,7 @@ body {
 }
 
 /* Menu Section 
-=======================================================================*/
+        =======================================================================*/
 
 .menu {
   position: fixed;
@@ -146,9 +146,9 @@ body {
   z-index: 1000000000000000;
 }
 .menu.menuActive .bar {
-background-color: rgb(209, 209, 209);
+  background-color: rgb(209, 209, 209);
 }
-.menu .bar{
+.menu .bar {
   width: 45px;
   height: 3px;
   background: rgb(117, 117, 117);
@@ -173,7 +173,7 @@ background-color: rgb(209, 209, 209);
 /* ===================================== */
 
 /* Nav Section 
-==================================================================*/
+        ==================================================================*/
 .nav-container {
   display: flex;
   align-items: center;
@@ -202,7 +202,7 @@ background-color: rgb(209, 209, 209);
   z-index: 1000000000;
 }
 /* Nav Left Section
-============================== */
+        ============================== */
 .nav-wrapper .nav-left-section {
   width: 50%;
   display: flex;
@@ -234,6 +234,13 @@ background-color: rgb(209, 209, 209);
   justify-content: space-evenly;
   z-index: 1000000000000000;
 }
+.nav-items {
+  transition: font-family 0.4s ease-in-out;
+}
+.nav-items:hover {
+  transition: 0.4s ease-in-out;
+  font-family: "bison-bold";
+}
 .nav-content a {
   color: white;
   text-decoration: none;
@@ -241,7 +248,7 @@ background-color: rgb(209, 209, 209);
   font-family: "bison-outline";
 }
 /* Nav Right Section
-================================= */
+        ================================= */
 
 .nav-wrapper .nav-right-section {
   width: 50%;
@@ -276,7 +283,7 @@ background-color: rgb(209, 209, 209);
 /* End Nav Section ======================================== */
 
 /* Home 
-=====================================================================*/
+        =====================================================================*/
 .home-wrapper {
   width: 75%;
   position: relative;
@@ -286,7 +293,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* Home Left Section 
-==========================================*/
+        ==========================================*/
 .home-wrapper .home-left-section {
   padding-left: 30px;
   position: relative;
@@ -380,7 +387,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* Home Right Section
-=================================================== */
+        =================================================== */
 .home-wrapper .home-right-section {
   width: 50%;
   min-height: 100vh;
@@ -440,7 +447,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* Service Section 
-========================================================*/
+        ========================================================*/
 
 .service-wrapper {
   width: 75%;
@@ -454,7 +461,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* Service Left Section
-=================================== */
+        =================================== */
 
 .service-wrapper .service-left-section {
   width: 50%;
@@ -524,7 +531,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* Service Right Section
-=================================================== */
+        =================================================== */
 .service-wrapper .service-right-section {
   width: 50%;
   min-height: 140vh;
@@ -595,7 +602,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* Project Left Section
-=================================== */
+        =================================== */
 
 .project-wrapper .project-left-section {
   width: 50%;
@@ -653,7 +660,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* project Right Section
-=================================================== */
+        =================================================== */
 .project-wrapper .project-right-section {
   width: 50%;
   display: flex;
@@ -724,7 +731,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* About Section 
-=============================================================================*/
+        =============================================================================*/
 
 .about-section {
   width: 75%;
@@ -738,7 +745,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* Project Left Section
-=================================== */
+        =================================== */
 
 .about-section .about-left-section {
   width: 50%;
@@ -773,7 +780,7 @@ background-color: rgb(209, 209, 209);
 }
 
 /* About Right Section
-=================================================== */
+        =================================================== */
 .about-section .about-right-section {
   width: 50%;
   display: flex;
