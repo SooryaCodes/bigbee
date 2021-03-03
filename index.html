@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/root.css" />
     <!-- Responsive StyleSheet -->
     <link rel="stylesheet" href="css/media.css" />
+    <!-- Smooth Scroll StyleSheet -->
+    <link rel="stylesheet" href="css/smooth-scroll.css" />
     <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -44,7 +46,7 @@
 
     <!-- Main Section
         ==========================================================================================  -->
-    <section class="section-wrapper">
+    <section class="section-wrapper" data-scroll-container>
       <!-- Stripes -->
       <div class="stripes-wrapper">
         <div class="lines first"></div>
@@ -64,7 +66,7 @@
       <!-- Nav Section  
         ===================================================================================-->
 
-      <div class="nav-container ">
+      <div class="nav-container">
         <div class="stripes-wrapper" style="z-index: 1000000000000">
           <div class="lines first" style="height: 75% !important"></div>
           <div class="lines second"></div>
@@ -100,6 +102,7 @@
       <!-- Home Section
             ========================================================================================== -->
       <div
+      data-scroll-section
         class="container-fluid"
         id="Home"
         style="
@@ -158,6 +161,7 @@
       <div
         class="yellow-container container-fluid p-0"
         id="Service"
+        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -251,6 +255,7 @@
       <div
         class="container-fluid p-0"
         id="Project"
+        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -298,6 +303,7 @@
       <div
         class="yellow-container container-fluid p-0"
         id="About"
+        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -352,7 +358,10 @@
 
       <!-- Contact Section 
     =============================================================================-->
-      <!-- <div
+      <div
+        class="yellow-container container-fluid p-0"
+        id="Contact"
+        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -360,22 +369,61 @@
           background: var(--darkColor);
           padding: 0 !important;
         "
-        id="Contact"
-        class="container-fluid"
       >
-        <div class="contact-section">
-          <div class="contact-left-section"></div>
-          <div class="contact-right-section">
-            <form action="#">
-                
-            </form>
+        <div class="contact-wrapper">
+          <!-- Contact Left Section
+            ========================================== -->
+          <div class="contact-left-section">
+           <!-- Contact -->
+            <div class="contact">
+              <div class="title-section">
+                <h4>Send A Message</h4>
+              </div>
+              <div class="form-section">
+                <!-- Contact Form -->
+                <form action="" autocomplete="off" >
+                  <div class="input-groups">
+                    <input type="text" name="" placeholder="name" id="name" class="input" />
+                    <input type="text" name="" placeholder="email" id="email" class="input" />
+                  </div>
+                  <div class="input-groups">
+                    <input type="text" name="" placeholder="Subject" id="subject" class="input" />
+                  </div>
+                  <div class="input-groups">
+                    <textarea
+                      name="" placeholder="message"
+                      id="message"
+                      rows="6"
+                      class="input"
+                    ></textarea>
+                  </div>
+                  <div class="input-groups">
+                    <!-- <input type="submit" name="" class="submit" id="" value="Send"> -->
+                  </div>
+                </form>
+              </div>
+              <div class="contact-details">
+
+              </div>
+            </div>
           </div>
+          <!-- ========================================== -->
+
+          <!-- Contact Right Section
+            ========================================== -->
+          <div class="contact-right-section">
+            <div class="rotate-text">
+              <span id="contact">Contact <br /></span>
+            </div>
+          </div>
+          <!--========================================= -->
         </div>
-      </div> -->
+        <!-- ================================ -->
+      </div>
 
       <!-- Footer Section
         ================================================================== -->
-      <footer>
+      <footer data-scroll-section>
         <div class="container-fluid" style="width: 90% !important" id="footer">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-4">
@@ -442,6 +490,8 @@
     ></script>
     <!-- GSAP Js File -->
     <script src="./js/gsap.js"></script>
+    <!-- Smooth Scroll Js File -->
+    <script src="./js/smooth-scroll.js"></script>
     <!-- Script Js File -->
     <script src="./js/script.js"></script>
   </body>
