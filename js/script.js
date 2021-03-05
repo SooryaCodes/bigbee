@@ -8,27 +8,32 @@ var menu = document.querySelector('.menu')
 var nav = document.querySelector('.nav-container')
 
 //Nav Links
-var navLinks=document.querySelectorAll('.nav-items')
+var navLinks = document.querySelectorAll('.nav-items')
 
 // //menuNav Toggle Function
 const menuNavToggle = () => {
     menu.classList.toggle('active')
     nav.classList.toggle('active')
+    window.addEventListener('keydown', escKeyNavClose)
 }
 
+
 //Function navClose
-const navClose=()=>{
-//  Removing Nav Active Class
-nav.classList.remove('active')
-//  Removing Menu Active Class
-menu.classList.remove('active')
+const navClose = () => {
+    //  Removing Nav Active Class
+    nav.classList.remove('active')
+    //  Removing Menu Active Class
+    menu.classList.remove('active')
 }
+
+//Function escKeyNavClose
+const escKeyNavClose = (e) => { if (e.key === 'Escape') { navClose() } }
 
 // //Adding Click Listener
 menu.addEventListener('click',/* Menu & Nav Active Class Toggle Function*/  menuNavToggle);
 
 //Nav Links Click Nav Close
-navLinks.forEach(element => /*Click Listener A Links*/element.addEventListener('click',navClose));
+navLinks.forEach(element => /*Click Listener A Links*/element.addEventListener('click', navClose));
 
 // /* End 
 // ================================*/
@@ -51,10 +56,10 @@ var aLinks = document.querySelectorAll('a')
 const triggerCursor = (e) =>/*Styling Cursor */ cursor.setAttribute('style', `top:${e.pageY}px;left:${e.pageX}px`)
 
 //Function menuCursorAnimation
-const menuCursorAnimation = () => {cursor.classList.add('active'); menu.classList.add('menuActive');}
+const menuCursorAnimation = () => { cursor.classList.add('active'); menu.classList.add('menuActive'); }
 
 //Function remMenuCursorAnimation
-const remMenuCursorAnimation = () => {cursor.classList.remove('active');menu.classList.remove('menuActive');}
+const remMenuCursorAnimation = () => { cursor.classList.remove('active'); menu.classList.remove('menuActive'); }
 
 //Function btnCursorAnimation
 const btnCursorAnimation = () => cursor.classList.add('active')
@@ -78,8 +83,8 @@ const remCursorOnYellow = () => cursor.classList.remove('cursor-yellow')
 window.addEventListener('mousemove', triggerCursor)
 
 //Menu Animation Cursor
-menu.addEventListener('mouseover',menuCursorAnimation)
-menu.addEventListener('mouseleave',remMenuCursorAnimation)
+menu.addEventListener('mouseover', menuCursorAnimation)
+menu.addEventListener('mouseleave', remMenuCursorAnimation)
 //Buttons Animation Cursor
 buttons.forEach(element => {
     element.addEventListener('mouseover', btnCursorAnimation);

@@ -102,7 +102,7 @@
       <!-- Home Section
             ========================================================================================== -->
       <div
-      data-scroll-section
+        data-scroll-section
         class="container-fluid"
         id="Home"
         style="
@@ -359,7 +359,7 @@
       <!-- Contact Section 
     =============================================================================-->
       <div
-        class="yellow-container container-fluid p-0"
+        class=" container-fluid p-0"
         id="Contact"
         data-scroll-section
         style="
@@ -374,36 +374,52 @@
           <!-- Contact Left Section
             ========================================== -->
           <div class="contact-left-section">
-           <!-- Contact -->
-            <div class="contact">
+            <!-- Contact -->
+            <div class="contact yellow-container">
               <div class="title-section">
                 <h4>Send A Message</h4>
               </div>
               <div class="form-section">
                 <!-- Contact Form -->
-                <form action="" autocomplete="off" >
+                <form action="" autocomplete="off">
                   <div class="input-groups">
-                    <input type="text" name="" placeholder="name" id="name" class="input" />
-                    <input type="text" name="" placeholder="email" id="email" class="input" />
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="name"
+                      id="name"
+                      class="input"
+                    />
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="email"
+                      id="email"
+                      class="input"
+                    />
                   </div>
                   <div class="input-groups">
-                    <input type="text" name="" placeholder="Subject" id="subject" class="input" />
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Subject"
+                      id="subject"
+                      class="input"
+                    />
                   </div>
                   <div class="input-groups">
                     <textarea
-                      name="" placeholder="message"
+                      name=""
+                      placeholder="message"
                       id="message"
                       rows="6"
                       class="input"
                     ></textarea>
                   </div>
-                  <div class="input-groups">
-                    <!-- <input type="submit" name="" class="submit" id="" value="Send"> -->
+                  <div class="input-submit">
+<button class="submit"><i class="ri-send-plane-fill"></i> Send</button>
                   </div>
                 </form>
-              </div>
-              <div class="contact-details">
-
               </div>
             </div>
           </div>
@@ -490,9 +506,11 @@
     ></script>
     <!-- GSAP Js File -->
     <script src="./js/gsap.js"></script>
+    <!-- Locomotive Scroll Js File -->
+    <!-- <script src="./assets/modules/locomotive-scroll.js"></script> -->
     <!-- Smooth Scroll Js File -->
     <script src="./js/smooth-scroll.js"></script>
-    <!-- Script Js File -->
     <script src="./js/script.js"></script>
+    <!-- Script Js File -->
   </body>
 </html>

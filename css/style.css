@@ -5,11 +5,11 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 /* HTML */
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -1010,15 +1010,6 @@ footer {
   justify-content: space-evenly;
 }
 
-.contact-wrapper .contact-right-section {
-  width: 50%;
-  min-height: 140vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
 
 .contact-wrapper .contact-right-section .rotate-text {
   /* margin-top: 250px; */
@@ -1048,7 +1039,8 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 650px;
+
   height: 60%;
   background: var(--themeColor);
   border-radius: 5px;
@@ -1062,7 +1054,6 @@ footer {
 
 .contact .input-groups {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -1072,10 +1063,11 @@ footer {
 }
 .contact .input-groups .input{
   width: 450px ;
-  border: 1px solid;
+  border: 1px solid rgba(80, 80, 80, 0.418);
   background: none;
   border-radius: 3px;
   padding: 10px;
+  font-family: 'raleway';
   outline: none !important;
   height: 35px;
   text-transform: capitalize;
@@ -1087,9 +1079,41 @@ footer {
 ::placeholder{
   color: var(--darkColor) 
 }
+.input-submit{
+  width: 100%;
+  display: flex;
+  align-items: center;justify-content: center;
+}
+button.submit{
+  cursor: none;
+  border-radius: 30px;
+  width:300px;
+  display: flex;
+  font-family: 'raleway';
+  font-size: 15px;
+  justify-content: center;
+  color: white;
+  background: var(--darkColor);
+  align-items: center;
+  height: 40px;
+}
 
+button i{
+  margin-right: 5px;
+}
 
-/* Contact Details */
-.contact-details{
-  
+/* //input auto complete color change */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid rgba(80, 80, 80, 0.418);
+  -webkit-text-fill-color: var(---darkColor);
+  -webkit-box-shadow: 0 0 0px 1000px var(--themeColor) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

@@ -47,7 +47,7 @@
     right: 60px !important;
     top: 60px !important;
   }
-  .menu .bar{
+  .menu .bar {
     width: 35px !important;
     height: 2px !important;
   }
@@ -444,5 +444,67 @@
   .nav-left-section {
     width: 100% !important;
   }
+  .nav-content {
+    padding-top: 100px;
+  }
 }
 /* End Nav Responsive */
+
+/* Contact Responsive
+==================================================================== */
+
+@media screen and (max-width: 1840px) {
+  .contact {
+    width: 600px !important;
+  }
+  .contact .input-groups .input {
+    width: 400px !important;
+  }
+  #email,
+  #name {
+    width: 195px !important;
+  }
+}
+
+@media screen and (max-width: 1404px) {
+  .contact {
+    width: 550px !important;
+  }
+  .contact .input-groups .input {
+    width: 380px !important;
+    height: 33px !important;
+  }
+  #email,
+  #name {
+    width: 185px !important;
+  }
+  .submit {
+    width: 250px !important;
+    font-size: 13px !important;
+    height: 35px !important;
+  }
+  #contact {
+    font-size: 170px !important;
+  }
+  #contact::after {
+    left: 380px !important;
+    top: 170px !important;
+  }
+  .contact-wrapper .contact-right-section .rotate-text {
+    right: 80px !important;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  .contact {
+    width: 500px !important;
+    height: 55% !important;
+  }
+  .contact .input-groups .input {
+    width: 350px !important;
+  }
+  #email,
+  #name {
+    width: 170px !important;
+  }
+}
