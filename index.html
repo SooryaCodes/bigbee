@@ -32,13 +32,11 @@
     <link rel="stylesheet" href="css/root.css" />
     <!-- Responsive StyleSheet -->
     <link rel="stylesheet" href="css/media.css" />
-    <!-- Smooth Scroll StyleSheet -->
-    <link rel="stylesheet" href="css/smooth-scroll.css" />
     <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body id="my-scrollbar">
     <!-- Cursor
     ================================================================================== -->
     <div class="cursor"></div>
@@ -46,7 +44,7 @@
 
     <!-- Main Section
         ==========================================================================================  -->
-    <section class="section-wrapper" data-scroll-container>
+    <section class="section-wrapper">
       <!-- Stripes -->
       <div class="stripes-wrapper">
         <div class="lines first"></div>
@@ -102,7 +100,6 @@
       <!-- Home Section
             ========================================================================================== -->
       <div
-        data-scroll-section
         class="container-fluid"
         id="Home"
         style="
@@ -161,7 +158,6 @@
       <div
         class="yellow-container container-fluid p-0"
         id="Service"
-        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -169,16 +165,18 @@
           background: var(--themeColor);
           margin-top: 100px !important;
           z-index: 1;
+          position: relative;
           padding: 0 !important;
         "
       >
+        <!-- Stripes -->
+        <div class="stripes-wrapperYellow">
+          <div class="lines" id="YellowStripes"></div>
+          <div class="lines second"></div>
+          <div class="lines third"></div>
+        </div>
+
         <div class="service-wrapper">
-          <!-- Stripes -->
-          <div class="stripes-wrapperYellow">
-            <div class="lines" id="YellowStripes"></div>
-            <div class="lines second"></div>
-            <div class="lines third"></div>
-          </div>
           <!-- Service Left Section
                 ========================================== -->
           <div class="service-left-section">
@@ -255,7 +253,6 @@
       <div
         class="container-fluid p-0"
         id="Project"
-        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -303,7 +300,6 @@
       <div
         class="yellow-container container-fluid p-0"
         id="About"
-        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -312,15 +308,16 @@
           z-index: 1;
           background: var(--themeColor);
           padding: 0 !important;
+          position: relative;
         "
       >
+        <!-- Stripes -->
+        <div class="stripes-wrapperYellow">
+          <div class="lines" id="YellowStripes"></div>
+          <div class="lines second"></div>
+          <div class="lines third"></div>
+        </div>
         <div class="about-section">
-          <!-- Stripes -->
-          <div class="stripes-wrapperYellow">
-            <div class="lines" id="YellowStripes"></div>
-            <div class="lines second"></div>
-            <div class="lines third"></div>
-          </div>
           <div class="about-left-section">
             <div class="rotate-text">
               <span id="about">About <br /></span>
@@ -359,9 +356,8 @@
       <!-- Contact Section 
     =============================================================================-->
       <div
-        class=" container-fluid p-0"
+        class="container-fluid p-0"
         id="Contact"
-        data-scroll-section
         style="
           display: flex;
           align-items: center;
@@ -417,7 +413,9 @@
                     ></textarea>
                   </div>
                   <div class="input-submit">
-<button class="submit"><i class="ri-send-plane-fill"></i> Send</button>
+                    <button class="submit">
+                      <i class="ri-send-plane-fill"></i> Send
+                    </button>
                   </div>
                 </form>
               </div>
@@ -439,7 +437,7 @@
 
       <!-- Footer Section
         ================================================================== -->
-      <footer data-scroll-section>
+      <footer>
         <div class="container-fluid" style="width: 90% !important" id="footer">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-4">
@@ -507,10 +505,10 @@
     <!-- GSAP Js File -->
     <script src="./js/gsap.js"></script>
     <!-- Locomotive Scroll Js File -->
-    <!-- <script src="./assets/modules/locomotive-scroll.js"></script> -->
-    <!-- Smooth Scroll Js File -->
     <script src="./js/smooth-scroll.js"></script>
-    <script src="./js/script.js"></script>
+    <!-- Smooth Scroll Js File -->
+    <script src="./js/scroll.js"></script>
     <!-- Script Js File -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

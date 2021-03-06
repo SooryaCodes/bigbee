@@ -40,11 +40,12 @@
 @media screen and (max-width: 848px) {
   .home-wrapper .home-left-section .logo {
     top: 60px !important;
+    padding-left: 10px;
     left: -30px !important;
   }
   /* Menu */
   .menu {
-    right: 60px !important;
+    right: 40px !important;
     top: 60px !important;
   }
   .menu .bar {
@@ -379,7 +380,7 @@
 
 @media screen and (max-width: 495px) {
   .about-right-section {
-    padding: 0 !important;
+    padding: 10px !important;
   }
 
   .about-right-section .top-section {
@@ -416,6 +417,7 @@
 
 @media screen and (max-width: 758px) {
   .footer {
+    padding-top: 20px;
     justify-content: flex-start !important;
     height: 250px !important;
   }
@@ -498,7 +500,7 @@
 @media screen and (max-width: 1146px) {
   .contact {
     width: 500px !important;
-    height: 55% !important;
+    height: 52% !important;
   }
   .contact .input-groups .input {
     width: 350px !important;
@@ -506,5 +508,138 @@
   #email,
   #name {
     width: 170px !important;
+  }
+}
+
+@media screen and (max-width: 1066px) {
+  .contact-wrapper .rotate-text {
+    right: 0 !important;
+    top: 50px !important;
+  }
+  #contact {
+    font-size: 150px !important;
+  }
+  .contact {
+    width: 450px !important;
+    height: 52% !important;
+  }
+
+  .contact .title-section h4 {
+    font-size: 21px;
+  }
+  button.submit {
+    cursor: none;
+    border-radius: 30px;
+    width: 300px;
+    display: flex;
+    font-family: "raleway";
+    font-size: 15px;
+    justify-content: center;
+    color: white;
+    background: var(--darkColor);
+    align-items: center;
+    height: 40px;
+  }
+
+  button i {
+  }
+}
+
+@media screen and (max-width: 928px) {
+  .contact-wrapper {
+    flex-direction: column-reverse;
+    height: 1700px !important;
+  }
+  .contact {
+    width: 450px;
+    height: 540px !important;
+  }
+  .contact-left-section,
+  .contact-right-section {
+    padding-left: 0 !important;
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  .contact .input-groups .input {
+    width: 380px !important;
+  }
+  #email,
+  #name {
+    width: 185px !important;
+  }
+}
+@media screen and (max-width: 615px) {
+  .contact-wrapper .contact-right-section .rotate-text {
+    right: 130px !important;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .contact {
+    width: 420px !important;
+    height: 540px !important;
+  }
+
+  .contact .input-groups .input {
+    width: 350px !important;
+  }
+  #email,
+  #name {
+    width: 170px !important;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .contact {
+    width: 390px !important;
+    height: 540px !important;
+  }
+
+  .contact .input-groups .input {
+    width: 320px !important;
+    font-size: 13px !important;
+  }
+  ::placeholder {
+    font-size: 13px !important;
+  }
+  #email,
+  #name {
+    width: 155px !important;
+  }
+}
+
+@media screen and (max-width: 407px) {
+  .contact {
+    width: 340px !important;
+    height: 500px !important;
+  }
+
+  .contact .input-groups .input {
+    width: 310px !important;
+    font-size: 13px !important;
+  }
+  ::placeholder {
+    font-size: 13px !important;
+  }
+  #email,
+  #name {
+    width: 150px !important;
+  }
+}
+
+/* Stripes Responsive */
+
+@media screen and (max-width: 636px) {
+  .stripes-wrapper,
+  .stripes-wrapperYellow {
+    width: 90% !important;
+  }
+  .second,
+  .stripes-wrapperYellow .second {
+    display: none !important;
+  }
+  .lines {
+    width: 50% !important;
   }
 }
