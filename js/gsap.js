@@ -1,10 +1,17 @@
 // Register ScrollTriger
 gsap.registerPlugin(ScrollTrigger)
 
-// New Timeline
-let homeTl = gsap.timeline({
+// Home Left Section Timeline
+let homeLeft = gsap.timeline({
     scrollTrigger: {
-        trigger: '.home-wrapper',
+        trigger: '.home-left-section',
+        start: 'center bottom'
+    }
+})
+// Home Right Section Timeline
+let homeRight = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.home-right-section',
         start: 'center bottom'
     }
 })
@@ -13,37 +20,31 @@ let homeTl = gsap.timeline({
 /*Home Section
  ==============================================================*/
 
-//Home Image
+// Image
 
-homeTl.to('#home-image', {
-    rotate: -4,
-    scale: 1,
-    delay: .4
+homeRight.to('#home-image',{
+    scale:1,
+    rotate:-3
 })
-
-//  Title
-
-homeTl.to('.home-title', {
-    opacity: 1,
-    y: -50
-})
-
-
-//  Title Bar
-
-homeTl.to('#home-title-bar', {
-    opacity: 1,
-    x: 100,
-    delay:1
-})
-
-
-//  Home Paragraph
-
-homeTl.to('#home-paragaraph', {
-    opacity: 1,
+// Title
+homeLeft.to('.home-title', {
     y: -50,
-    delay:.5,
+    delay:.7,
+    opacity: 1,
+    clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)'
 })
 
+// Title Bar
+homeLeft.from('#home-title-bar', {
+    width:0,
+    // clipPath: 'polygon(100% 100%, 0 100%, 0 0, 100% 0)',
+    delay: .4
+
+})
+// Paragraph 
+homeLeft.to('#home-paragaraph', {
+    delay: .4,
+    y:50,
+    opacity: 1
+})
 

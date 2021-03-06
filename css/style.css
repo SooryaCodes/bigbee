@@ -327,20 +327,22 @@ body {
   letter-spacing: 3px;
   margin-bottom: 20px;
   position: relative;
-  top: 50px;
+  bottom: -50px;
   opacity: 0;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
   transition: 0.5s ease-in;
 }
-.home-wrapper .home-left-section .left-section-content hr {
+.home-wrapper .home-left-section .left-section-content #home-title-bar {
   background: var(--themeColor);
   height: 2px;
   margin: 0;
   font-size: 20px;
   margin-bottom: 20px;
   width: 200px;
-  opacity: 0;
+  transition: 0.5s ease-in-out;
   position: relative;
-  left: -100px;
+
+  /* left: -100px; */
 }
 
 .home-wrapper .home-left-section .left-section-content p {
@@ -348,8 +350,9 @@ body {
   color: rgb(139, 139, 139);
   font-family: "raleway";
   opacity: 0;
+  transition: 0.4s ease-out;
   position: relative;
-  bottom: -50px;
+  bottom: 50px;
   letter-spacing: 1px;
   width: 75%;
 }
@@ -1114,3 +1117,4 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px var(--themeColor) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
