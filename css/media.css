@@ -439,9 +439,13 @@
     font-size: 50px !important;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .nav-right-section {
     display: none !important;
+  }
+  .nav-right-section .rotate-text{
+    display: none;
+    font-size: 0px !important;
   }
   .nav-left-section {
     width: 100% !important;
@@ -527,22 +531,7 @@
   .contact .title-section h4 {
     font-size: 21px;
   }
-  button.submit {
-    cursor: none;
-    border-radius: 30px;
-    width: 300px;
-    display: flex;
-    font-family: "raleway";
-    font-size: 15px;
-    justify-content: center;
-    color: white;
-    background: var(--darkColor);
-    align-items: center;
-    height: 40px;
-  }
 
-  button i {
-  }
 }
 
 @media screen and (max-width: 928px) {

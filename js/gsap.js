@@ -47,4 +47,15 @@ homeLeft.to('#home-paragaraph', {
     y:50,
     opacity: 1
 })
+// Button 
+homeLeft.to('#home-btn-btn', {
+    delay: .4,
+    x:50,
+    opacity: 1
+})
+
+// Btn Hr 
+homeLeft.to('#btn-hr', {
+    opacity: 1
+})
 
